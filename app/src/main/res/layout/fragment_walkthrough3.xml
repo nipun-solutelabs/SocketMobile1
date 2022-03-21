@@ -50,6 +50,7 @@
             />
     </LinearLayout>
 
+<!--    TODO-->
     <Button
         android:id="@+id/keyboardSetupBtn"
         android:layout_width="match_parent"

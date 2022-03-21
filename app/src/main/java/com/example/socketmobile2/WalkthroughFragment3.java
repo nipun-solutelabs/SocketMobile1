@@ -8,13 +8,7 @@ import androidx.viewpager.widget.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link WalkthroughFragment3#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class WalkthroughFragment3 extends Fragment {
 
     ViewPager viewPager;
@@ -28,6 +22,9 @@ public class WalkthroughFragment3 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_walkthrough3, container, false);
+        View view = inflater.inflate(R.layout.fragment_walkthrough3, container, false);
+        viewPager = getActivity().findViewById(R.id.viewPager);
+        return view;
+
     }
 }
